@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛜</text></svg>">
+        <title> WebServer </title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="nav">
+            <ul class="island" href="#" id="island">
+                <li>Introduzione</li>
+            </ul>
+        </div>
+
+        <a class="Title" id="0"></a>
+        <div class="container">
+            <div class="center">
+                <h1>
+                    Progetto WebServer (Traccia 2)
+                </h1>
+                <p> 
+                    Creare un web server semplice in Python che possa servire file statici (come HTML, CSS, immagini,
+                     e gestire richieste HTTP GET di base.
+                    Il server deve essere in grado di gestire più richieste simultaneamente e restituire risposte appropriate ai client.
+                </p>
+                <h2>
+                    Risoluzione del problema
+                </h2>
+
+                <p>
+                    Ho creato il web server semplice con il nome di ‘server.py’,
+                     e si occupa di gestire le diverse richieste tra i diversi client, in sintesi, avvia un server http multithreaded che serve solo le medesime richieste GET,
+                     che il client ha richiesto, con i file contenuti nella directory ‘./frontend/’.
+                </p>
+                
+                
+                <h2>Esecuzione del programma</h2>
+                <p>
+                    Il programma scritto non presenta moduli esterni a quelli presenti nella libreria standard della versione di Python corrente, per eseguirlo è necessario scaricare e installare Python.
+                    Apri un terminale e esegui lo script con il comando: 
+                    <b class="c1">python ./server.py</b>
+                </p>
+                <p>
+                    Comparirà a schermo la scritta Starting server on <b class="c1">http://localhost:8080</b>, con la pressione di <b class="c6">Ctrl+Click</b>, si effettuerà automaticamente una richiesta http sulla porta: <b class="c4">8080</b> al server.
+                    Per interrompere il server, è necessaria la sola pressione di <b class="c6">Ctrl+C</b>.
+                </p>
+            </div>
+            <a class="Title" id="1"></a>
+        </div>
+        <div class="wrapper">
+            <div class="arrow">
+                <div onclick="back()" class="left"></div>
+            </div>
+            <div id="window" class="window">
+                <div class="header">
+                    <div class="close"></div>
+                    <div class="minimize"></div>
+                    <div onclick="writeAll()" class="expand"></div>
+                    <div class="title" id="title"></div>
+                </div>
+                <div class="content" id="content">
+                    
+                </div>
+            </div>
+            <div class="arrow">
+                <div onclick="forward()" class="right"></div>
+            </div>
+        </div>
+        <a class="Title" id="2"></a>
+        <div class="container background" >
+            <div id="description" class="center">
+                
+            </div>
+        </div>
+        
+        <a class="Title" id="3"></a>
+        <div class="footer">
+            <div id="github" class="type">
+                
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/data.js"></script>
+        <script src="js/type.js"></script>
+    </body>
+</html>
